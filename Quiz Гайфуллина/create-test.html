@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>UniQ — Создать тест</title>
+  <link rel="stylesheet" href="uniq.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">UniQ</div>
+
+    <nav class="nav">
+      <a href="uniq.html#about">О проекте</a> 
+      <a href="create-test.html">Создать тест</a>
+      <a href="uniq.html#why">О нас</a>
+      <a href="uniq.html#reviews">Отзывы</a>
+      <a href="how-it-works.html">Как проходит тест</a>
+
+
+    </nav>
+
+    <div class="auth">
+      <a href="#" class="auth__login">Вход</a>
+      <a href="uniq.html#registration" class="btn btn--primary">Регистрация</a>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="create-test-section">
+    <div class="container">
+        <div class="create-test-card">
+            <h2>Параметры нового теста</h2>
+            <form>
+                <label for="test-title">Название теста</label>
+                <input type="text" id="test-title" placeholder="Например: 'Тест по основам Python' или 'Вводный экзамен'">
+
+                <label for="test-subject">Предмет / Категория</label>
+                <input type="text" id="test-subject" placeholder="Например: 'Информатика', 'История', 'Маркетинг'">
+
+                <label for="test-type">Формат теста</label>
+                <select id="test-type">
+                    <option value="single">Один верный ответ</option>
+                    <option value="multiple">Несколько верных ответов</option>
+                    <option value="matching">Сопоставление (пары)</option>
+                    <option value="sequence">Последовательность</option>
+                </select>
+                
+                <label for="description">Цель или краткое описание теста (для студентов)</label>
+                <textarea id="description" placeholder="Этот тест поможет проверить знания после лекции №5."></textarea>
+
+                <label class="checkbox" style="margin-top: 30px;">
+                    <input type="checkbox" checked>
+                    <span>Я согласен с условиями использования UniQ</span>
+                </label>
+
+                <button type="submit" class="btn btn--primary" style="margin-top: 20px; padding: 15px; font-size: 16px; width: 100%;">Настроить и продолжить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <strong>UniQ</strong>
+      <p>support@uniq.ru<br>8 800 500-40-82</p>
+    </div>
+
+    <div>
+      <h5>О нас</h5>
+      <a href="uniq.html#about">О проекте</a>
+      <a href="uniq.html#">Блог</a>
+      <a href="uniq.html#reviews">Отзывы</a>
+    </div>
+
+    <div>
+      <h5>Для обучения</h5>
+      <a href="create-test.html">Создать тест</a>
+      <a href="uniq.html#why">Подробнее</a>
+      <a href="uniq.html#">Помощь</a>
+    </div>
+
+    <div>
+      <h5>Документы</h5>
+      <a href="uniq.html#">Политика конфиденциальности</a>
+      <a href="uniq.html#">Пользовательское соглашение</a>
+    </div>
+  </div>
+
+  <p class="footer__copy">© 2025 Гайфуллина Зарина</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.querySelector('.nav-toggle');
+      const header = document.querySelector('.header');
+
+      toggleButton.addEventListener('click', () => {
+        header.classList.toggle('nav-open');
+      });
+    });
+</script>
+
+</body>
+</html>

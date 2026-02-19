@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>UniQ — Как проходит тест</title>
+  <link rel="stylesheet" href="uniq.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">UniQ</div>
+
+    <nav class="nav">
+      <a href="uniq.html">Главная</a>
+      <a href="create-test.html">Создать тест</a>
+      <a href="how-it-works.html">Как проходит тест</a>
+    </nav>
+
+    <div class="auth">
+      <a href="#" class="auth__login">Вход</a>
+      <a href="uniq.html#registration" class="btn btn--primary">Регистрация</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="create-test-section">
+  <div class="container">
+    <div class="create-test-card">
+      <h2>Как проходит тестирование в UniQ</h2>
+
+      <div class="how-steps">
+
+        <div class="how-step">
+          <h3>Преподаватель создаёт тест</h3>
+          <p>
+            Вы выбираете формат вопросов, настраиваете параметры и публикуете тест.
+          </p>
+        </div>
+
+        <hr class="how-divider">
+
+        <div class="how-step">
+          <h3>Студент проходит тест</h3>
+          <p>
+            Участник отвечает на вопросы в удобном интерфейсе и видит прогресс.
+          </p>
+        </div>
+
+        <hr class="how-divider">
+
+        <div class="how-step">
+          <h3>Система проверяет ответы</h3>
+          <p>
+            UniQ автоматически оценивает результаты и формирует аналитику.
+          </p>
+        </div>
+
+        <hr class="how-divider">
+
+        <div class="how-step">
+          <h3>Результаты доступны сразу</h3>
+          <p>
+            Преподаватель и студент мгновенно получают обратную связь.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="how-action">
+        <a href="create-test.html" class="btn btn--primary">
+          Попробовать создать тест
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.nav-toggle');
+  const header = document.querySelector('.header');
+
+  toggleButton.addEventListener('click', () => {
+    header.classList.toggle('nav-open');
+  });
+});
+</script>
+
+</body>
+</html>
